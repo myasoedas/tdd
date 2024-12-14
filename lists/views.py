@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def home_page(request):
+    """
+    Обработчик для домашней страницы.
+    """
+    return render(request, "lists/home.html")
